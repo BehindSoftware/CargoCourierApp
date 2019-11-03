@@ -14,6 +14,7 @@ public class Product {
 
     public int productID;
     public int productSize;
+    
     public void setProductID() {
     	Random random = new Random();
         int randomInteger = random.nextInt(9999);

@@ -26,14 +26,12 @@ public class Courier {
     }
 
     public void setPrice(int vehicle) {
-//    	Random random = new Random();
-//        int randomInteger = random.nextInt(9999);
-//        this.price = randomInteger;
-    	if(vehicle == 1) {
+
+    	if(vehicle == TypeOfShipment.MOTORCYCLE.getValue()) {
     		this.price = 50;
-    	}else if (vehicle == 2) {
+    	}else if (vehicle == TypeOfShipment.VAN.getValue()) {
     		this.price = 100;
-    	}else if (vehicle == 3) {
+    	}else if (vehicle == TypeOfShipment.TRUCK.getValue()) {
     		this.price = 200;
     	}else {
     		this.price = 400;
@@ -43,13 +41,13 @@ public class Courier {
     public void setVehicle(int totalsize) {
     	//enum usage should be designed.
         if(totalsize<=10) {
-        	this.vehicle =  1; // TypeOfShipment.MOTORCYCLE;
+        	this.vehicle = TypeOfShipment.MOTORCYCLE.getValue();
         }else if(10<totalsize && totalsize<=100) {
-        	this.vehicle =  2; //TypeOfShipment.VAN;
+        	this.vehicle =  TypeOfShipment.VAN.getValue();
         }else if(100<totalsize && totalsize<=500) {
-        	this.vehicle =  3; //TypeOfShipment.TRUCK;
+        	this.vehicle =  TypeOfShipment.TRUCK.getValue(); 
         }else {
-        	this.vehicle =  4; //TypeOfShipment.TRAILER;
+        	this.vehicle = TypeOfShipment.TRAILER.getValue();
         }
     }
 

@@ -10,10 +10,18 @@ enum StateOfShipment {
 }
 
 enum TypeOfShipment{
-	MOTORCYCLE,
-	VAN,
-	TRUCK,
-	TRAILER
+	MOTORCYCLE(1),
+	VAN(2),
+	TRUCK(3),
+	TRAILER(4);
+	
+	private final int value;
+	
+	TypeOfShipment(final int newValue) {
+		value = newValue;
+	}
+	
+	public int getValue() { return value; }
 }
 
 public class Consignment {

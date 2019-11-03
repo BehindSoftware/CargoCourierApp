@@ -1,6 +1,21 @@
 
 import java.util.*;
 
+enum StateOfShipment {
+	ORDERED,
+	PAID,
+	LOADED,
+	INTRANSFER,
+	RECEIVED
+}
+
+enum TypeOfShipment{
+	MOTORCYCLE,
+	VAN,
+	TRUCK,
+	TRAILER
+}
+
 public class Consignment {
 
     /**

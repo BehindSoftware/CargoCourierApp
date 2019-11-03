@@ -23,6 +23,7 @@ public class UserAccount {
     }
 
     public int addProductToList(int size) {
+    	//exception handling should be added(size is bigger than zero) 
         Product product = new Product(size);
         return product.getProductID();
     }

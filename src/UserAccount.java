@@ -1,9 +1,6 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class UserAccount {
 
     /**
@@ -17,57 +14,34 @@ public class UserAccount {
 
     }
 
-    /**
-     * 
-     */
     public int userID;
-
-    /**
-     * 
-     */
     public int password;
-
-
-    /**
-     * 
-     */
     public void send() {
-        // TODO implement here
+        Consignment consignment = new Consignment();
     }
 
-    /**
-     * 
-     */
+    public void addProductToList(int size) {
+        Product product = new Product(size);
+    }
+    
     public void accept() {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
     public void track() {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
     public void search() {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
-    public void getUserID() {
-        // TODO implement here
+    public int getUserID() {
+        return this.userID;
     }
 
-    /**
-     * 
-     */
-    public void getPassword() {
-        // TODO implement here
+    public int getPassword() {
+        return this.password;
     }
 
 }

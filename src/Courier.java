@@ -1,72 +1,47 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class Courier {
 
     /**
      * Default constructor
      */
     public Courier() {
+    	setCourierID();
+    	setPrice();
+    	setVehicle();
     }
 
-    /**
-     * 
-     */
+
     public int courierID;
-
-    /**
-     * 
-     */
     public int price;
-
-    /**
-     * 
-     */
     public int vehicle;
 
 
-
-    /**
-     * 
-     */
     public void setCourierID() {
-        // TODO implement here
+    	Random random = new Random();
+        int randomInteger = random.nextInt(9999);
+        this.courierID = randomInteger;
     }
 
-    /**
-     * 
-     */
     public void setPrice() {
-        // TODO implement here
+    	Random random = new Random();
+        int randomInteger = random.nextInt(9999);
+        this.price = randomInteger;
     }
 
-    /**
-     * 
-     */
     public void setVehicle() {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
-    public void getCourierID() {
-        // TODO implement here
+    public int getCourierID() {
+        return this.courierID;
     }
 
-    /**
-     * 
-     */
-    public void getPrice() {
-        // TODO implement here
+    public int getPrice() {
+        return this.price;
     }
 
-    /**
-     * 
-     */
     public void getVehicle() {
         // TODO implement here
     }

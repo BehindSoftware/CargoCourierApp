@@ -15,9 +15,7 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-/**
- * 
- */
+
 public class CourierAdmin extends UserAccount {
 
     /**
@@ -76,29 +74,25 @@ public class CourierAdmin extends UserAccount {
     	
     }
 
-    /**
-     * 
-     */
     private void addXMLfile() {
        
     }
 
-    /**
-     * 
-     */
     protected int createUserID() {
     	Random random = new Random();
         int randomInteger = random.nextInt(9999);
         return randomInteger;
     }
 
-    /**
-     * 
-     */
     protected int createPassword() {
     	Random random = new Random();
         int randomInteger = random.nextInt(9999);
         return randomInteger;
+    }
+
+    protected void decideCourier() {
+    	Courier courier = new Courier();
+    	
     }
 
 }

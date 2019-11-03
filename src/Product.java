@@ -1,54 +1,31 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class Product {
 
     /**
      * Default constructor
      */
-    public Product() {
+    public Product(int size) {
+    	
+    	setProductID();
+    	this.productSize = size;
     }
 
-    /**
-     * 
-     */
     public int productID;
-
-    /**
-     * 
-     */
     public int productSize;
-
-
-    /**
-     * 
-     */
     public void setProductID() {
-        // TODO implement here
+    	Random random = new Random();
+        int randomInteger = random.nextInt(9999);
+        this.productID = randomInteger;
     }
 
-    /**
-     * 
-     */
-    public void setProductSize() {
-        // TODO implement here
+    public int getProductID() {
+        return productID;
     }
 
-    /**
-     * 
-     */
-    public void getProductID() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
-    public void getProductSize() {
-        // TODO implement here
+    public int getProductSize() {
+        return productSize;
     }
 
 }

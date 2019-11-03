@@ -1,68 +1,38 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class Consignment {
 
     /**
      * Default constructor
      */
     public Consignment() {
+    	
+    	setConsignmentID();
+    	this.consignmentID = getConsignmentID();
+    	
     }
 
-    /**
-     * 
-     */
     public int consignmentID;
-
-    /**
-     * 
-     */
     public String productList;
-
-    /**
-     * 
-     */
     public int shipmentState;
 
-
-
-
-    /**
-     * 
-     */
     public void setConsignmentID() {
-        // TODO implement here
+    	Random random = new Random();
+        int randomInteger = random.nextInt(9999);
+        this.consignmentID = randomInteger;
     }
 
-    /**
-     * 
-     */
-    public void addProductToList() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
     public void setShipmentState() {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
-    public void getConsignmentID() {
-        // TODO implement here
+    public int getConsignmentID() {
+        return this.consignmentID;
     }
 
-    /**
-     * 
-     */
-    public void getShipmentState() {
-        // TODO implement here
+    public int getShipmentState() {
+        return shipmentState;
     }
 
 }

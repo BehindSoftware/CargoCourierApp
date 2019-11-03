@@ -11,10 +11,12 @@ public class Consignment {
     	setConsignmentID();
     	this.consignmentID = getConsignmentID();
     	
+    	this.productList = new ArrayList<Integer>();
+     	
     }
 
     public int consignmentID;
-    public String productList;
+    public List<Integer> productList;
     public int shipmentState;
 
     public void setConsignmentID() {

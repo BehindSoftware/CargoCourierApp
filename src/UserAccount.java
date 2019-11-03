@@ -18,10 +18,13 @@ public class UserAccount {
     public int password;
     public void send() {
         Consignment consignment = new Consignment();
+        //enter size (tempsizevariable) and click add
+        //consignment.productList.add(addProductToList(tempsizevariable));
     }
 
-    public void addProductToList(int size) {
+    public int addProductToList(int size) {
         Product product = new Product(size);
+        return product.getProductID();
     }
     
     public void accept() {

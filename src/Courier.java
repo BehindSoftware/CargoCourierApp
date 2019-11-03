@@ -15,17 +15,17 @@ public class Courier {
     /**
      * 
      */
-    public void courierID;
+    public int courierID;
 
     /**
      * 
      */
-    public void price;
+    public int price;
 
     /**
      * 
      */
-    public void vehicle;
+    public int vehicle;
 
 
 

@@ -15,17 +15,17 @@ public class Consignment {
     /**
      * 
      */
-    public void consignmentID;
+    public int consignmentID;
 
     /**
      * 
      */
-    public void productList;
+    public String productList;
 
     /**
      * 
      */
-    public void shipmentState;
+    public int shipmentState;
 
 
 

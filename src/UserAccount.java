@@ -15,12 +15,12 @@ public class UserAccount {
     /**
      * 
      */
-    public void userID;
+    public int userID;
 
     /**
      * 
      */
-    public void password;
+    public int password;
 
 
     /**

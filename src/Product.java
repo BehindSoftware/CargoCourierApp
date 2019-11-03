@@ -15,12 +15,12 @@ public class Product {
     /**
      * 
      */
-    public void productID;
+    public int productID;
 
     /**
      * 
      */
-    public void productSize;
+    public int productSize;
 
 
     /**

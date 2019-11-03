@@ -24,6 +24,9 @@ public class CourierAdmin extends UserAccount {
      * Default constructor
      */
     public CourierAdmin() {
+    	
+    	super(1111, 1234);
+    	
     	String userAccountsDataXMLPath = "/home/vertex/eclipse-workspace-forjava/CargoCourierApp/records/Data.xml";
     	File userAccountsDataXML = new File(userAccountsDataXMLPath);
 
@@ -45,11 +48,11 @@ public class CourierAdmin extends UserAccount {
     		      staff.setAttributeNode(attr);
     		      
     		      Element userID = doc.createElement("userID");
-    		      userID.appendChild(doc.createTextNode("99999"));
+    		      userID.appendChild(doc.createTextNode("1111"));
     		      staff.appendChild(userID);
     		      
     		      Element password = doc.createElement("password");
-    		      password.appendChild(doc.createTextNode("12345"));
+    		      password.appendChild(doc.createTextNode("1234"));
     		      staff.appendChild(password);
     		      
     		      TransformerFactory transformerFactory = TransformerFactory.newDefaultInstance();
@@ -73,19 +76,29 @@ public class CourierAdmin extends UserAccount {
     	
     }
 
-
     /**
      * 
      */
-    private void setUserID() {
-        // TODO implement here
+    private void addXMLfile() {
+       
     }
 
     /**
      * 
      */
-    private void setPassword() {
-        // TODO implement here
+    protected int createUserID() {
+    	Random random = new Random();
+        int randomInteger = random.nextInt(9999);
+        return randomInteger;
+    }
+
+    /**
+     * 
+     */
+    protected int createPassword() {
+    	Random random = new Random();
+        int randomInteger = random.nextInt(9999);
+        return randomInteger;
     }
 
 }

@@ -9,7 +9,12 @@ public class UserAccount {
     /**
      * Default constructor
      */
-    public UserAccount() {
+    public UserAccount(int ID, int pass) {
+    	this.userID = ID;
+    	this.password = pass;
+        System.out.println("userID : " + this.userID);
+        System.out.println("password : " + this.password);
+
     }
 
     /**

@@ -2,6 +2,9 @@
 import java.util.*;
 
 public class UserAccount {
+	
+	public int userID;
+    public int password;
 
     /**
      * Default constructor
@@ -14,8 +17,6 @@ public class UserAccount {
 
     }
 
-    public int userID;
-    public int password;
     public void send() {
         Consignment consignment = new Consignment();
         //enter size (tempsizevariable) and click add

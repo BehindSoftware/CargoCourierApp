@@ -2,7 +2,6 @@
 import java.util.*;
 
 public class UserAccount {
-	
 	public int userID;
     public int password;
 

@@ -39,7 +39,6 @@ public class Courier {
     }
 
     public void setVehicle(int totalsize) {
-    	//enum usage should be designed.
         if(totalsize<=10) {
         	this.vehicle = TypeOfShipment.MOTORCYCLE.getValue();
         }else if(10<totalsize && totalsize<=100) {

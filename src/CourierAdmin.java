@@ -28,7 +28,7 @@ public class CourierAdmin extends UserAccount {
 	}
 
 	private void createXMLfile() {
-		String userAccountsDataXMLPath = "records/Data.xml";
+		String userAccountsDataXMLPath = "/home/vertex/eclipse-workspace-forjava/CargoCourierApp/records/Data.xml";
 		File userAccountsDataXML = new File(userAccountsDataXMLPath);
 
 		if(userAccountsDataXML.exists()!=true) {
@@ -70,9 +70,8 @@ public class CourierAdmin extends UserAccount {
 				e.printStackTrace();
 			}
 
-		}
-		else {
-			System.out.println("userAccountsDataXML exists in \"records\" folder");
+		}else {
+			System.out.println("userAccountsDataXML exists on /home/vertex/eclipse-workspace-forjava/CargoCourierApp/records");
 		}
 	}
 

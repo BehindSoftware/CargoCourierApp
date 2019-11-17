@@ -1,4 +1,6 @@
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -36,6 +38,14 @@ public class OverView {
 		userName.setHorizontalAlignment(JTextField.CENTER);
 		
 		buNewCargo.setBounds(50, 450, 100, 50);
+		buNewCargo.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				NewCargo cargo = new NewCargo();
+			}
+		});
 		
 		paLeft.setLayout(null);
 		paLeft.setBackground(Color.lightGray);

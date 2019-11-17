@@ -31,10 +31,7 @@ public class TransactionHandler {
 		
 		try {
 			builder = new GsonBuilder();
-			builder.setPrettyPrinting();
 			gson = builder.create();
-			
-			Product product = new Product();
 			
 			br = new BufferedReader(new FileReader("DB/Transactions.json"));
 			

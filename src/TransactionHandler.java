@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 import com.google.gson.*;
 
 enum StateOfShipment {
@@ -17,12 +21,28 @@ enum Vehicle {
 
 public class TransactionHandler {
 	String user;
+	FileReader fr;
+	BufferedReader br;
+	GsonBuilder builder;
 	Gson gson;
-	GsonBuilder gBuilder;
-	JsonObject obj;
 	
 	public TransactionHandler(String user) {
 		this.user = user;
-		gson = new Gson();
+		
+		try {
+			builder = new GsonBuilder();
+			builder.setPrettyPrinting();
+			gson = builder.create();
+			
+			Product product = new Product();
+			
+			br = new BufferedReader(new FileReader("DB/Transactions.json"));
+			
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 }

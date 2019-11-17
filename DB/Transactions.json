@@ -1,28 +1,33 @@
 {
     "Products": [
         {
+            "ID": 100,
             "Name": "Book",
-            "Size": "1"
+            "Size": 1
         },
         {
+            "ID": 101,
             "Name": "Jacket",
-            "Size": "2"
+            "Size": 2
         },
         {
+            "ID": 102,
             "Name": "Cabinet",
-            "Size": "4"
+            "Size": 4
         }
     ],
     "Consignments": [
         {
-            "Sender": "1",
-            "Receiver": "2",
+            "ID": 200,
+            "Sender": "client1",
+            "Receiver": "client12",
             "Product": "Book",
             "State": "InTransfer"
         },
         {
-            "Sender": "2",
-            "Receiver": "3",
+            "ID": 201,
+            "Sender": "client12",
+            "Receiver": "client13",
             "Product": "Cabinet",
             "State": "InTransfer"
         }

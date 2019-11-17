@@ -2,11 +2,14 @@
 import java.util.*;
 
 public class Product {
+	int id;
+	String name;
+	int size;
 
     /**
      * Default constructor
      */
-    public Product(int size) {
+    public Product() {
     	
     	setProductID();
     	this.productSize = size;

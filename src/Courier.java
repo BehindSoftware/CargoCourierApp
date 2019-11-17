@@ -1,11 +1,11 @@
-
+/*
 import java.util.*;
 
 public class Courier {
 
     /**
      * Default constructor
-     */
+     
     public Courier() {
     	setCourierID();
     	//how can we calculate totalsize and pass to this function ? This will be designed.
@@ -62,4 +62,4 @@ public class Courier {
         return this.vehicle;
     }
 
-}
+}*/

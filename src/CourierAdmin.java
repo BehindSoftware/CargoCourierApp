@@ -91,9 +91,9 @@ public class CourierAdmin extends UserAccount {
 		return randomInteger;
 	}
 
-	protected void decideCourier() {
-		Courier courier = new Courier();
+//	protected void decideCourier() {
+//		Courier courier = new Courier();
 
-	}
+//	}
 
 }

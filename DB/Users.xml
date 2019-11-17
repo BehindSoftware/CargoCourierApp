@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Users>
+    <user id = "0">
+        <isAdmin>yes</isAdmin>
+        <username>admin</username>
+        <password>admin</password>
+    </user>
+    <user id = "1">
+        <isAdmin>no</isAdmin>
+        <username>client1</username>
+        <password>1client</password>
+    </user>
+    <user id = "2">
+        <isAdmin>no</isAdmin>
+        <username>client2</username>
+        <password>2client</password>
+    </user>
+    <user id = "3">
+        <isAdmin>no</isAdmin>
+        <username>client3</username>
+        <password>3client</password>
+    </user>
+</Users>

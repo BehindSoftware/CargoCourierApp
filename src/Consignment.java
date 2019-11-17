@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-enum StateOfShipment {
+/*enum StateOfShipment {
 	ORDERED,
 	PAID,
 	LOADED,
@@ -23,7 +23,7 @@ enum TypeOfShipment{
 	
 	public int getValue() { return value; }
 }
-
+*/
 public class Consignment {
 
     /**

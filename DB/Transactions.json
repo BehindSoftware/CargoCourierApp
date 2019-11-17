@@ -1,0 +1,30 @@
+{
+    "Products": [
+        {
+            "Name": "Book",
+            "Size": "1"
+        },
+        {
+            "Name": "Jacket",
+            "Size": "2"
+        },
+        {
+            "Name": "Cabinet",
+            "Size": "4"
+        }
+    ],
+    "Consignments": [
+        {
+            "Sender": "1",
+            "Receiver": "2",
+            "Product": "Book",
+            "State": "InTransfer"
+        },
+        {
+            "Sender": "2",
+            "Receiver": "3",
+            "Product": "Cabinet",
+            "State": "InTransfer"
+        }
+    ]
+}
